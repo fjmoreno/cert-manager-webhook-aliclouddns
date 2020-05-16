@@ -10,7 +10,7 @@ Since aliclouddns has not been included in the core codebase of cert-manager, an
 1. apply the yaml to deploy the webhook:
 
    ```bash
-   kubectl apply -f https://raw.githubusercontent.com/beebird/cert-manager-webhook-aliclouddns/master/deploy/rendered-manifest.yaml
+   kubectl apply -f https://raw.githubusercontent.com/fjmoreno/cert-manager-webhook-aliclouddns/master/deploy/rendered-manifest.yaml
    ```
 
 2. download and update example issuer and cert files:
@@ -21,8 +21,8 @@ Since aliclouddns has not been included in the core codebase of cert-manager, an
    │   └── wildcard-certificate-test.yaml
    ```
    ```bash
-   curl -SsL -o issuer.yaml https://raw.githubusercontent.com/beebird/cert-manager-webhook-aliclouddns/master/example/cluster-issuer-letsencrypt-staging.yaml
-   curl -SsL -o certificate.yaml  https://raw.githubusercontent.com/beebird/cert-manager-webhook-aliclouddns/master/example/wildcard-certificate-test.yaml
+   curl -SsL -o issuer.yaml https://raw.githubusercontent.com/fjmoreno/cert-manager-webhook-aliclouddns/master/example/cluster-issuer-letsencrypt-staging.yaml
+   curl -SsL -o certificate.yaml  https://raw.githubusercontent.com/fjmoreno/cert-manager-webhook-aliclouddns/master/example/wildcard-certificate-test.yaml
    ```
 
 3. Apply updated yaml files to create a clusterissuer and a test certificate:
